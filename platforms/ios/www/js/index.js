@@ -28,6 +28,9 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
         this.receivedEvent('deviceready');
+        CleverTap.notifyDeviceReady();
+        CleverTap.setDebugLevel(3);
+        CleverTap.registerPush();
     },
 
     // Update DOM on a Received Event
@@ -41,6 +44,11 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+
+    
+
+
+
 };
 
 app.initialize();

@@ -13,14 +13,22 @@
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		3362C7E7E7944C0BB28A2774 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A221DA040B2E4DCF8FE026CD /* UIKit.framework */; };
 		41CCFF92A46940A6905AB3E8 /* AppDelegate+FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE27A0B436D47E8B70B19C1 /* AppDelegate+FirebasePlugin.m */; };
+		41FA8BE3A7154FF79F294DA9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9553061A860F425AB00237EC /* CoreLocation.framework */; };
 		46C785B8739F4F9B85CBC280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 738BF0255F3649C3BF0295EA /* GoogleService-Info.plist */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		8E4F2C509C9A4B38BA56FA7C /* FirebasePluginMessageReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 741679877214408794B007E4 /* FirebasePluginMessageReceiver.m */; };
+		8E83EE0C3934404184D99372 /* CleverTapSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA32C8FF270E4A33A8B47103 /* CleverTapSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		AC09E0F0C7C4507124A1618B /* Pods_CleverTapiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD56645EE48E7B0ACEAEB6E6 /* Pods_CleverTapiOS.framework */; };
+		BB9CC3037BE6466DB691A01A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10DD7DAFACFB41898ACCFBD5 /* SystemConfiguration.framework */; };
 		BEC85EF6D1834A42837ADF43 /* FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F56476953EC54CA08A13C78A /* FirebasePlugin.m */; };
+		CA5D5F3DF0B642A8AD36888C /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5992A565206F49B3BF650000 /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CBB171DE828745148B1D784C /* FirebasePluginMessageReceiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7252BF24E1734E0886B99119 /* FirebasePluginMessageReceiverManager.m */; };
+		E0E6059FEF3C42A1BE1795EE /* CleverTapPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F44AFC9DE9024C44A7FBC48E /* CleverTapPlugin.m */; };
+		EB6AC1E013A4497A9C86C703 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AFA8B7259844EBAC7634CE /* CoreTelephony.framework */; };
 		F4C5BC3A1B1A42389E309487 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661F28962CC74566BA5D0363 /* AuthenticationServices.framework */; };
+		FC8B4ABF9B1341318CEB1F0C /* AppDelegate+CleverTapPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A043FD39FAD4DFDA02247EA /* AppDelegate+CleverTapPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +55,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AE507ECF26B8452C962CE427 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E83EE0C3934404184D99372 /* CleverTapSDK.framework in Embed Frameworks */,
+				CA5D5F3DF0B642A8AD36888C /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CleverTapiOS/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		10DD7DAFACFB41898ACCFBD5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1A043FD39FAD4DFDA02247EA /* AppDelegate+CleverTapPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+CleverTapPlugin.m"; path = "clevertap-cordova/AppDelegate+CleverTapPlugin.m"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* CleverTapiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleverTapiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,21 +89,29 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* CleverTapiOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CleverTapiOS-Prefix.pch"; sourceTree = "<group>"; };
-		661F28962CC74566BA5D0363 /* AuthenticationServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		5992A565206F49B3BF650000 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "CleverTapiOS/Plugins/clevertap-cordova/SDWebImage.framework"; sourceTree = "<group>"; };
+		661F28962CC74566BA5D0363 /* AuthenticationServices.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = CleverTapiOS/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		7252BF24E1734E0886B99119 /* FirebasePluginMessageReceiverManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiverManager.m; path = "cordova-plugin-firebasex/FirebasePluginMessageReceiverManager.m"; sourceTree = "<group>"; };
-		738BF0255F3649C3BF0295EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		738BF0255F3649C3BF0295EA /* GoogleService-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		741679877214408794B007E4 /* FirebasePluginMessageReceiver.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePluginMessageReceiver.m; path = "cordova-plugin-firebasex/FirebasePluginMessageReceiver.m"; sourceTree = "<group>"; };
+		74AFA8B7259844EBAC7634CE /* CoreTelephony.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7A2895AA79EB080AFD7A9F74 /* Pods-CleverTapiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleverTapiOS.debug.xcconfig"; path = "Target Support Files/Pods-CleverTapiOS/Pods-CleverTapiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		816F1A32A541428EACAFFAFB /* AppDelegate+CleverTapPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AppDelegate+CleverTapPlugin.h"; path = "clevertap-cordova/AppDelegate+CleverTapPlugin.h"; sourceTree = "<group>"; };
 		82F78CAB347C4CC49D967E69 /* FirebasePluginMessageReceiverManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiverManager.h; path = "cordova-plugin-firebasex/FirebasePluginMessageReceiverManager.h"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* CleverTapiOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "CleverTapiOS-Info.plist"; path = "CleverTapiOS/CleverTapiOS-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		9553061A860F425AB00237EC /* CoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A221DA040B2E4DCF8FE026CD /* UIKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A53CD9F1AA984913BBEC478C /* FirebasePlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePlugin.h; path = "cordova-plugin-firebasex/FirebasePlugin.h"; sourceTree = "<group>"; };
 		ABE27A0B436D47E8B70B19C1 /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-firebasex/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; };
 		AD56645EE48E7B0ACEAEB6E6 /* Pods_CleverTapiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleverTapiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B081C93C89D34C22B4CED952 /* FirebasePluginMessageReceiver.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FirebasePluginMessageReceiver.h; path = "cordova-plugin-firebasex/FirebasePluginMessageReceiver.h"; sourceTree = "<group>"; };
+		B7D7F2B81C78442095DB0E81 /* CleverTapPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CleverTapPlugin.h; path = "clevertap-cordova/CleverTapPlugin.h"; sourceTree = "<group>"; };
+		EA32C8FF270E4A33A8B47103 /* CleverTapSDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CleverTapSDK.framework; path = "CleverTapiOS/Plugins/clevertap-cordova/CleverTapSDK.framework"; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		F44AFC9DE9024C44A7FBC48E /* CleverTapPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CleverTapPlugin.m; path = "clevertap-cordova/CleverTapPlugin.m"; sourceTree = "<group>"; };
 		F56476953EC54CA08A13C78A /* FirebasePlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FirebasePlugin.m; path = "cordova-plugin-firebasex/FirebasePlugin.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = CleverTapiOS/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +124,10 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				F4C5BC3A1B1A42389E309487 /* AuthenticationServices.framework in Frameworks */,
 				AC09E0F0C7C4507124A1618B /* Pods_CleverTapiOS.framework in Frameworks */,
+				BB9CC3037BE6466DB691A01A /* SystemConfiguration.framework in Frameworks */,
+				EB6AC1E013A4497A9C86C703 /* CoreTelephony.framework in Frameworks */,
+				3362C7E7E7944C0BB28A2774 /* UIKit.framework in Frameworks */,
+				41FA8BE3A7154FF79F294DA9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +155,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				EB87FDF41871DAF40020F90C /* config.xml */,
@@ -165,6 +202,12 @@
 			children = (
 				661F28962CC74566BA5D0363 /* AuthenticationServices.framework */,
 				AD56645EE48E7B0ACEAEB6E6 /* Pods_CleverTapiOS.framework */,
+				EA32C8FF270E4A33A8B47103 /* CleverTapSDK.framework */,
+				5992A565206F49B3BF650000 /* SDWebImage.framework */,
+				10DD7DAFACFB41898ACCFBD5 /* SystemConfiguration.framework */,
+				74AFA8B7259844EBAC7634CE /* CoreTelephony.framework */,
+				A221DA040B2E4DCF8FE026CD /* UIKit.framework */,
+				9553061A860F425AB00237EC /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +242,10 @@
 				A53CD9F1AA984913BBEC478C /* FirebasePlugin.h */,
 				B081C93C89D34C22B4CED952 /* FirebasePluginMessageReceiver.h */,
 				82F78CAB347C4CC49D967E69 /* FirebasePluginMessageReceiverManager.h */,
+				1A043FD39FAD4DFDA02247EA /* AppDelegate+CleverTapPlugin.m */,
+				F44AFC9DE9024C44A7FBC48E /* CleverTapPlugin.m */,
+				816F1A32A541428EACAFFAFB /* AppDelegate+CleverTapPlugin.h */,
+				B7D7F2B81C78442095DB0E81 /* CleverTapPlugin.h */,
 			);
 			name = Plugins;
 			path = CleverTapiOS/Plugins;
@@ -210,7 +257,6 @@
 				7A2895AA79EB080AFD7A9F74 /* Pods-CleverTapiOS.debug.xcconfig */,
 				29F806A4FE16000A2CEBB615 /* Pods-CleverTapiOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,7 +283,9 @@
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				D853533C4595CEF1A17427E6 /* [CP] Embed Pods Frameworks */,
 				593CD85A5797F6EE15CBF8D0 /* [CP] Copy Pods Resources */,
-				213DD3D6879B4AC5A029664B /* "Crashlytics" */,
+				213DD3D6879B4AC5A029664B /* Crashlytics */,
+				AE507ECF26B8452C962CE427 /* Embed Frameworks */,
+				ED09DF413AD748508E66E72D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -258,6 +306,7 @@
 				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 7XM67G79YA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,7 +315,12 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -314,6 +368,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		213DD3D6879B4AC5A029664B /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
+			showEnvVarsInLog = 0;
+		};
 		304B58A110DAC018002A0835 /* Copy www directory */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,21 +481,19 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleverTapiOS/Pods-CleverTapiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		213DD3D6879B4AC5A029664B /* "Crashlytics" */ = {
+		ED09DF413AD748508E66E72D /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
-			name = "Crashlytics";
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"";
-			showEnvVarsInLog = 0;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -441,6 +509,8 @@
 				BEC85EF6D1834A42837ADF43 /* FirebasePlugin.m in Sources */,
 				8E4F2C509C9A4B38BA56FA7C /* FirebasePluginMessageReceiver.m in Sources */,
 				CBB171DE828745148B1D784C /* FirebasePluginMessageReceiverManager.m in Sources */,
+				FC8B4ABF9B1341318CEB1F0C /* AppDelegate+CleverTapPlugin.m in Sources */,
+				E0E6059FEF3C42A1BE1795EE /* CleverTapPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +535,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 7XM67G79YA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"CleverTapiOS/Plugins/clevertap-cordova\"",
+					"\"CleverTapiOS/Plugins/clevertap-cordova\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -473,7 +549,7 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "CleverTapiOS/CleverTapiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parth.CleverTapiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,13 +566,19 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 7XM67G79YA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"CleverTapiOS/Plugins/clevertap-cordova\"",
+					"\"CleverTapiOS/Plugins/clevertap-cordova\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CleverTapiOS/CleverTapiOS-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "CleverTapiOS/CleverTapiOS-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.parth.CleverTapiOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,6 +625,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
 			};
 			name = Debug;
 		};
@@ -584,6 +667,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				WK_WEB_VIEW_ONLY = 0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks $(inherited)";
 			};
 			name = Release;
 		};

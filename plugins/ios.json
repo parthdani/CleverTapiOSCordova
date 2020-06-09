@@ -15,6 +15,12 @@
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
       "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "clevertap-cordova": {
+      "CLEVERTAP_ACCOUNT_ID": "W6Z-6Z5-975Z",
+      "CLEVERTAP_TOKEN": "516-160",
+      "CLEVERTAP_REGION": " ",
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {

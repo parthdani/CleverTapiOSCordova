@@ -11,6 +11,10 @@
             {
               "xml": "<feature name=\"FirebasePlugin\"><param name=\"ios-package\" value=\"FirebasePlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"CleverTapPlugin\"><param name=\"ios-package\" value=\"CleverTapPlugin\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -20,7 +24,7 @@
           "aps-environment": [
             {
               "xml": "<string>development</string>",
-              "count": 1
+              "count": 2
             }
           ]
         }
@@ -30,7 +34,7 @@
           "aps-environment": [
             {
               "xml": "<string>production</string>",
-              "count": 1
+              "count": 2
             }
           ]
         }
@@ -40,6 +44,24 @@
           "UIBackgroundModes": [
             {
               "xml": "<array><string>remote-notification</string></array>",
+              "count": 1
+            }
+          ],
+          "CleverTapAccountID": [
+            {
+              "xml": "<string>W6Z-6Z5-975Z</string>",
+              "count": 1
+            }
+          ],
+          "CleverTapToken": [
+            {
+              "xml": "<string>516-160</string>",
+              "count": 1
+            }
+          ],
+          "CleverTapRegion": [
+            {
+              "xml": "<string> </string>",
               "count": 1
             }
           ]
@@ -62,6 +84,12 @@
       "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
       "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "clevertap-cordova": {
+      "CLEVERTAP_ACCOUNT_ID": "W6Z-6Z5-975Z",
+      "CLEVERTAP_TOKEN": "516-160",
+      "CLEVERTAP_REGION": " ",
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {},
@@ -73,12 +101,21 @@
       "clobbers": [
         "FirebasePlugin"
       ]
+    },
+    {
+      "id": "clevertap-cordova.CleverTap",
+      "file": "plugins/clevertap-cordova/www/CleverTap.js",
+      "pluginId": "clevertap-cordova",
+      "clobbers": [
+        "CleverTap"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-whitelist": "1.3.4",
     "cordova-plugin-androidx": "2.0.0",
     "cordova-plugin-androidx-adapter": "1.1.1",
-    "cordova-plugin-firebasex": "9.1.2-cli"
+    "cordova-plugin-firebasex": "9.1.2-cli",
+    "clevertap-cordova": "2.2.1"
   }
 }

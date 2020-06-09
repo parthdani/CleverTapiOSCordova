@@ -52,5 +52,11 @@
 	<array>
 		<string>remote-notification</string>
 	</array>
+	<key>CleverTapAccountID</key>
+	<string>W6Z-6Z5-975Z</string>
+	<key>CleverTapToken</key>
+	<string>516-160</string>
+	<key>CleverTapRegion</key>
+	<string/>
 </dict>
 </plist>

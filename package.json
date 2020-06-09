@@ -13,6 +13,8 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
+    "clevertap-cordova": "git+https://github.com/CleverTap/clevertap-cordova.git",
+    "cordova": "^9.0.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-androidx": "^2.0.0",
     "cordova-plugin-androidx-adapter": "^1.1.1",
@@ -28,6 +30,11 @@
         "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
         "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
         "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true"
+      },
+      "clevertap-cordova": {
+        "CLEVERTAP_ACCOUNT_ID": "W6Z-6Z5-975Z",
+        "CLEVERTAP_TOKEN": "516-160",
+        "CLEVERTAP_REGION": " "
       }
     },
     "platforms": [
