@@ -1,0 +1,6 @@
+framework module Pods_CleverTapiOS {
+  umbrella header "Pods-CleverTapiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
