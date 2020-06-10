@@ -18,6 +18,8 @@
  */
 var app = {
     // Application Constructor
+    var FirebasePlugin;
+
     initialize: function() {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
@@ -31,7 +33,13 @@ var app = {
         CleverTap.notifyDeviceReady();
         CleverTap.setDebugLevel(3);
         CleverTap.registerPush();
+        FirebasePlugin = window.FirebasePlugin;
+        FirebasePlugin.initialize();
     },
+
+    FirebasePlugin.grantPermission:function(hasPermission){
+        console.log("Permission was " + (hasPermission ? "granted" : "denied"));
+    });
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,9 +53,32 @@ var app = {
         console.log('Received Event: ' + id);
     }
 
-    
 
+    FirebasePlugin.getToken():function(getToken)
+    {
+        console.log(token);
+        //CleverTap.setPushtoken(apnsToken);
+        CleverTap.recordEventWithNameAndProps("Push token refeived using getToken method",{"token":token});
+    }, function(error) {
+        console.error(error);
+    });
 
+    FirebasePlugin.getAPNSToken:function(apnsToken) {
+        console.log(apnsToken);
+        CleverTap.setPushtoken(apnsToken);
+        CleverTap.recordEventWithName("Push token refeived using getAPNSToken method");
+    }, function(error) {
+        console.error(error);
+    });
+
+    FirebasePlugin.onApnsTokenReceived:function(apnsToken)
+    {
+        console.log(apnsToken);
+        CleverTap.setPushtoken(apnsToken);
+        CleverTap.recordEventWithName("Push token refeived using onApnsTokenReceived method");
+    }, function(error) {
+        console.error(error);
+    });
 
 };
 
